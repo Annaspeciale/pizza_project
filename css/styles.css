@@ -1,3 +1,7 @@
 #pizza {
 	display: none;
 }
+
+body {
+	background-color: gray;
+}
