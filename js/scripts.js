@@ -11,11 +11,11 @@ Pizza.prototype.price = function() {
 var pizzaPrice = 0;
 
   if (this.size === "small" ){
-    pizzaPrice += 7 ;
+    pizzaPrice += 10 ;
   } else if (this.size === "medium"){
-    pizzaPrice += 12 ;
+    pizzaPrice += 14 ;
   } else if (this.size === "large" ){
-    pizzaPrice += 15 ;
+    pizzaPrice += 16 ;
   }
 
   return totalPrice= ("$"+ pizzaPrice * this.quantity);

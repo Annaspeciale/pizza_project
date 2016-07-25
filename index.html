@@ -5,18 +5,17 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.0.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Place your pizza order!</title>
+    <title>Pizza Order</title>
   </head>
   <body>
     <div class="container">
-          <h3>Please enter your information</h3>
+          <h3>Place your pizza order!</h3>
           <form id="pizzaOrder">
             <div class="form-group">
-              <label for="new-name">Name</label>
+              <label for="new-name">Please enter your name</label>
               <input type="text" class="form-control" id="new-name">
             </div>
-          <h3>Select toppings</h3>
-          <label for="new-toppings">Toppings</label>
+          <label for="new-toppings">Select Toppings</label>
           <div class="checkbox">
             <label><input type="checkbox" value="pepperoni">Pepperoni</label>
           </div>
@@ -24,13 +23,10 @@
             <label><input type="checkbox" value="italian sausage">Sausage</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="anchovy">Anchovy</label>
-          </div>
-          <div class="checkbox">
             <label><input type="checkbox" value="mushrooms">Mushrooms</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="blackolives">Black olives</label>
+            <label><input type="checkbox" value="olives">Olives</label>
           </div>
           <div class="checkbox">
             <label><input type="checkbox" value="chicken">Chicken</label>
@@ -44,21 +40,22 @@
           <div class="checkbox">
             <label><input type="checkbox" value="tomatos">Sun-dried tomatos</label>
           </div>
-          <h3>Select Size</h3>
-                <div class="form-group">
-                      <label for="new-size">Select your Size</label>
-                      <select class="form-control" id="new-size">
-                        <option>small</option>
-                        <option>medium</option>
-                        <option>large</option>
-                      </select>
-                    </div>
-          <h3>Select Quantity</h3>
-                    <div class="form-group">
-                      <label for="new-quantity">Quantity</label>
-                      <input type="number" class="form-control" id="new-quantity">
-                    </div>
-            <button type="submit" class ="btn btn btn-warning">Order</button>
+          <div class="checkbox">
+            <label><input type="checkbox" value="anchovy">Anchovy</label>
+          </div>
+            <div class="form-group">
+              <label for="new-size">Select Size</label>
+              <select class="form-control" id="new-size">
+              <option>small</option>
+              <option>medium</option>
+              <option>large</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-quantity">Select Quantity</label>
+              <input type="number" class="form-control" id="new-quantity">
+            </div>
+            <button type="submit" class ="btn btn btn-primary">Order</button>
           </form>
           <div id="pizza">
             <h3>Your Order:</h3>
